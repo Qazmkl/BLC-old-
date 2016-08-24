@@ -4,3 +4,8 @@ Broken link checker made with Selenium that checks all links within a site. Made
 A good chunk of the code is / inspired from http://www.software-testing-tutorials-automation.com/2015/08/how-to-find-broken-linksimages-from.html and http://stackoverflow.com/questions/1201048/allowing-java-to-use-an-untrusted-certificate-for-ssl-https-connection.
 
 Feel free to give constructive criticism / changes.
+
+v0.1:
+- Made in Eclipse
+- Uses Selenium (remember to reference them in project)
+- Runs an IE webdriver (remember to fix path for your machine)
