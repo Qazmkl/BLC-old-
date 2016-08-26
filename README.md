@@ -5,12 +5,12 @@ A good chunk of the code is / inspired from http://www.software-testing-tutorial
 
 Feel free to give constructive criticism / changes.
 
-# v0.1
-- Made in Eclipse
-- Uses Selenium (remember to reference them in project)
-- Runs an IE webdriver (remember to fix path for your machine)
-
 # Future Changes to Make
 - Greatly reduce global vairables (more modular)
 - Cleaner code
 - More comments / documentation
+
+# v0.1
+- Made in Eclipse
+- Uses Selenium (remember to reference them in project)
+- Runs an IE webdriver (remember to fix path for your machine)
