@@ -17,6 +17,7 @@ package BrokenLinks;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Scanner;
@@ -35,7 +36,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class BL {
 
-	private static boolean pageOnly = false;
+	private static boolean pageOnly = true;
 
 	private static Set<String> masterPageSet = new HashSet<String>();
 	private static List<String> listOfLinks = new ArrayList<String>();
@@ -61,8 +62,8 @@ public class BL {
 		customURL = input.nextLine();
 		System.out.print("One page only (Y/N): ");
 		pageOnlyAns = input.nextLine();
-		if (pageOnlyAns.equalsIgnoreCase("y") || pageOnlyAns.equalsIgnoreCase("yes")) {
-			pageOnly = true;
+		if (pageOnlyAns.equalsIgnoreCase("n") || pageOnlyAns.equalsIgnoreCase("no")) {
+			pageOnly = false;
 		}
 		input.close();
 		originalDomain = customURL.split("/")[0] + "//" + customURL.split("/")[2];
@@ -92,6 +93,9 @@ public class BL {
 		// Summarizes results
 		if (listOfLinks.size() > 0) {
 			scanPageCodes();
+			
+			Collections.sort(validLinkList);
+			Collections.sort(brokenLinkList);
 
 			System.out.println("--------------------------------------------");
 			System.out.println("Scan Complete!");
