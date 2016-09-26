@@ -14,3 +14,9 @@ Feel free to give constructive criticism / changes.
 - Made in Eclipse
 - Uses Selenium (remember to reference them in project)
 - Runs an IE webdriver (remember to fix path for your machine)
+
+# v0.2
+- Runs on IE, Chrome, and Firefox
+- Runs on a single page or entire domain (scan at your own risk)
+- Saves results in Excel file within a created folder
+- Can take screenshots (remove comments) and saves in folder
